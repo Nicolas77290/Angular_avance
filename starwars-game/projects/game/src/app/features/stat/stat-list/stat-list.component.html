@@ -1,0 +1,22 @@
+<h1>Star wars Statistiques</h1>
+<br>
+<br>
+
+<ul>
+  @for(stat of stats; track stat ) {
+    <li>
+      {{ stat.month }} / {{ stat.year }} :
+      <ul>
+          <li>
+            Succèss: {{ stat.nb_success }}
+          </li>
+      </ul>
+      <ul>
+          <li>
+            Echec: {{ stat.nb_fail }}
+          </li>
+      </ul>
+    </li>
+    <br>
+  }
+</ul>
